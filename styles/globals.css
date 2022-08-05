@@ -14,3 +14,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  margin-top: 10px;
+}
+
+.bg-barra-menu {
+  background-color: #17a2b8 !important;
+}
+
+.breadcrumb {
+  background-color: #e9ecef;
+}
+
+.btn-space {
+  margin-right: 5px;
+}
+
+.top-space {
+  margin-top: 5px;
+}

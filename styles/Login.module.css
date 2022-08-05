@@ -1,0 +1,16 @@
+.form-signin {
+    width: 40%;
+    margin: auto;
+}
+
+.login-label {
+    font-weight: 600;
+}
+
+.login-form-group {
+    margin-top: 10px;
+}
+
+.login-button {
+    margin-top: 10px;
+}
