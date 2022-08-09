@@ -93,6 +93,7 @@ export default function TarefaList({ token }) {
             setTarefaFilterList(retorno)
         }
     
+        console.log('recuperando dados da api')
         findPreferencias()
         findTarefas()
 
