@@ -28,7 +28,7 @@ export default function Login({ csrfToken }) {
             return
         }
 
-        router.push("/")
+        router.push("/tarefas")
     }
 
     return (

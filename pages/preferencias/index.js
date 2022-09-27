@@ -7,8 +7,11 @@ import ConfirmDialog from '@/components/confirmdialog'
 import { getSession } from "next-auth/react"
 import Layout from "@/components/layout"
 import TipoFiltroSelect from "@/components/tipofiltro"
+import { useRouter } from "next/router"
 
 export default function PreferenciasForm({ token }) {
+
+    const router = useRouter()
 
     const [preferenciasEdit, setPreferenciasEdit] = useState(new Preferencias())
     const [isLoading, setLoading] = useState(false)
@@ -82,6 +85,8 @@ export default function PreferenciasForm({ token }) {
 
             const tarefa = await res.json()
             success()
+            router.push("/tarefas")
+            
 
         } catch (err) {
             console.log('erro: ' + JSON.stringify(err))
@@ -112,6 +117,7 @@ export default function PreferenciasForm({ token }) {
 
             setPreferenciasEdit(new Preferencias())
             setShowConfirmDialog(false)
+            router.push("/tarefas")
 
         } catch (err) {
             console.log('erro: ' + JSON.stringify(err))

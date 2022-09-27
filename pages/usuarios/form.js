@@ -63,7 +63,7 @@ export default function UsuarioForm(props) {
             return
         }
 
-        router.push("/")
+        router.push("/tarefas")
     }
 
     const save = async (event) => {

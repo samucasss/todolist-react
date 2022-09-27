@@ -49,7 +49,7 @@ export default function TarefaList({ token }) {
         }
 
         const findTarefas = async () => {
-            const periodoTarefas = periodoEssaSemana()
+            const periodoTarefas = periodoAllTarefas()
             const inicio = moment(periodoTarefas.inicio).format('YYYY/MM/DD')
             const fim = moment(periodoTarefas.fim).format('YYYY/MM/DD')
 
@@ -99,15 +99,13 @@ export default function TarefaList({ token }) {
 
     }, [])
 
-    const periodoEssaSemana = () => {
+    const periodoAllTarefas = () => {
         const hoje = moment().startOf('day')
-        const domingo = moment(hoje).isoWeekday(0)
-        const sabado = moment(hoje).isoWeekday(6)
 
-        const ultimoSabado = moment(domingo).add(-1, 'days')
-        const proximoDomingo = moment(sabado).add(1, 'days')
+        const start = moment(hoje).add(-10, 'days')
+        const end = moment(hoje).add(10, 'days')
 
-        return { inicio: ultimoSabado, fim: proximoDomingo }
+        return { inicio: start, fim: end }
     }
 
     const success = () => {
