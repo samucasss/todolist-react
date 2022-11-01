@@ -1,8 +1,8 @@
-## ToDoList React
+# ToDoList React
 
-Implementação do frontend da aplicação ToDoList com React
+Implementação do frontend da aplicação ToDoList com React. Tecnologias utilizadas: React 18.2 com Bootstrap components, Next 12.2 e JWT authentication.
 
-Aplicação ToDoList:
+## Aplicação ToDoList:
 
 O objetivo do sistema é realizar o acompanhamento de tarefas diárias. 
 
