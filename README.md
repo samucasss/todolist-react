@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## ToDoList React
 
-## Getting Started
+Implementação do frontend da aplicação ToDoList com React
 
-First, run the development server:
+Aplicação ToDoList:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+O objetivo do sistema é realizar o acompanhamento de tarefas diárias. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Funcionalidades:
+1) Registro de usuários 
+Permite o registro de usuários no sistema através dos seguintes campos: Nome, E-mail e Senha.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2) Login do usuário
+Permite o login do usuário no sistema.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3) Alteração de dados do usuário logado
+Permite que o usuário logado altere seus dados.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+4) Exclusão do usuário logado
+Permite que o usuário logado exclua seus dados do sistema.
 
-## Learn More
+5) Cadastro, alteração e exclusão de preferências do usuário logado  
+Permite que o usuário logado informe o tipo de filtro padrão para a exibição das tarefas (Todos, Hoje, Amanhã e Semana) e se deve exibir as tarefas concluídas ou não.
+Esse valores podem ser alterados ou excluídos.
 
-To learn more about Next.js, take a look at the following resources:
+6) Listagem de tarefas
+Exibir a listagem de tarefas de acordo com as preferências definidas pelo usuário ou por padrão todas as tarefas não concluídas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+7) Cadastro, alteração e exclusão de tarefas
+Permite que o usuário logado cadastre uma nova tarefa através dos seguintes campos: Data, Nome, Descrição e se concluída ou não.
+Uma tarefa pode ser alterada ou excluída.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+8) Pesquisa de tarefas
+Permite que o usuário logado realize uma pesquisa na listagem de tarefas cadastradas pelo nome ou parte do nome.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+9) Sair do sistema
+Permite que o usuário se deslogue do sistema
